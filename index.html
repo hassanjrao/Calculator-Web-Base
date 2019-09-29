@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="calculator">
+       
+        <input type="text" id="input-field">
+
+        <div class="main">
+
+
+            <div class=left>
+                <div class="controls">
+                    <button onclick="operand_seven()" type="button" id="btn-7" class="btn" value="7">7</button>
+                    <button onclick="operand_eight()" type="button" id="btn-8" class="btn" value="8">8</button>
+                    <button onclick="operand_nine()" type="button" id="btn-9" class="btn" value="9">9</button>
+                    <button onclick="operand_four()" type="button" id="btn-4" class="btn" value="4">4</button>
+                    <button onclick="operand_five()" type="button" id="btn-5" class="btn" value="5">5</button>
+                    <button onclick="operand_six()" type="button" id="btn-6" class="btn" value="6">6</button>
+                    <button onclick="operand_one()" type="button" id="btn-1" class="btn" value="1">1</button>
+                    <button onclick="operand_two()" type="button" id="btn-2" class="btn" value="2">2</button>
+                    <button onclick="operand_three()" type="button" id="btn-3" class="btn" value="3">3</button>
+                    <button onclick="operand_dot()" type="button" id="btn-dot" class="btn" value=".">.</button>
+                    <button onclick="operand_zero()" type="button" id="btn-zero" class="btn" value="0">0</button>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <div class="controls">
+                    <button onclick="operator_add()" type="button" id="btn-add" value="+" class="btn-left">+</button>
+                    <button onclick="operator_mul()" type="button" id="btn-mul" value="*" class="btn-left">*</button>
+                    <button onclick="operator_div()" type="button" id="btn-div" value="/" class="btn-left">/</button>
+                    <button onclick="operator_sub()" type="button" id="btn-sub" value="-" class="btn-left">-</button>
+                    <button onclick="clear_text()" type="button" id="btn-clear" value="C" class="btn-left">C</button>
+                    <button onclick="isEqual()"type="button" id="btn-equal" value="=" class="btn-left">=</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>
